@@ -1,10 +1,10 @@
 package apples_and_oranges;
 
-import java.util.*;
+import java.util.Scanner;
 
 public class Solution {
+    private static final Scanner scanner = new Scanner(System.in);
 
-    // Complete the countApplesAndOranges function below.
     static void countApplesAndOranges(int s, int t, int a, int b, int[] apples, int[] oranges) {
         int countApples = 0;
         int countOranges = 0;
@@ -23,7 +23,6 @@ public class Solution {
 
         System.out.println(countApples);
         System.out.println(countOranges);
-
     }
 
     private static boolean isHouseRange(int startHouse, int endHouse, int fruitTree, int fruit) {
@@ -31,27 +30,17 @@ public class Solution {
         return fruitIndex >= startHouse && fruitIndex <= endHouse;
     }
 
-    private static final Scanner scanner = new Scanner(System.in);
-
     public static void main(String[] args) {
         String[] st = scanner.nextLine().split(" ");
 
         int s = Integer.parseInt(st[0]);
-
         int t = Integer.parseInt(st[1]);
-
         String[] ab = scanner.nextLine().split(" ");
-
         int a = Integer.parseInt(ab[0]);
-
         int b = Integer.parseInt(ab[1]);
-
         String[] mn = scanner.nextLine().split(" ");
-
         int m = Integer.parseInt(mn[0]);
-
         int n = Integer.parseInt(mn[1]);
-
         int[] apples = new int[m];
 
         String[] applesItems = scanner.nextLine().split(" ");

@@ -1,6 +1,8 @@
 package birthday_cake;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.List;
 import java.util.stream.Stream;
 
@@ -33,7 +35,6 @@ public class Solution {
 
     public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
 
         int n = Integer.parseInt(bufferedReader.readLine().trim());
 
@@ -44,15 +45,10 @@ public class Solution {
         String[] dm = bufferedReader.readLine().replaceAll("\\s+$", "").split(" ");
 
         int d = Integer.parseInt(dm[0]);
-
         int m = Integer.parseInt(dm[1]);
-
         int result = birthday(s, d, m);
-
-        bufferedWriter.write(String.valueOf(result));
-        bufferedWriter.newLine();
+        System.out.println(result);
 
         bufferedReader.close();
-        bufferedWriter.close();
     }
 }
