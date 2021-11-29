@@ -1,4 +1,8 @@
 # My Java katas
+
+**This is now DEPRECATED**
+This started being migrated to https://github.com/RicardooCorreia/code-katas-java
+
 Some katas that I do to sharp my skills
 
 This katas are mainly from hacker rank.
